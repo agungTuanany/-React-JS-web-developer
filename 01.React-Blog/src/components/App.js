@@ -1,5 +1,10 @@
 import React, { Component } from 'react';
 
+import './css/index.css';
+
+// COMPONENT
+import Navbar from './Navbar';
+
 // TYPE OF COMPONENT: Class-Component
 class App extends Component {
     constructor(props) {
@@ -9,7 +14,11 @@ class App extends Component {
     }
 
     render() {
-        return <div> THIS IS A COMPONENT</div>;
+        return (
+            <div>
+                <Navbar />
+            </div>
+        );
     }
 }
 
