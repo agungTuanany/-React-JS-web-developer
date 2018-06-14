@@ -8,8 +8,7 @@ class Footer extends Component {
                 <div className="row">
                     <div className="col-md-6 col-md-offset-3 text-center">
                         <small>
-                            © 2016 Personal Free HTML5 Template. All Rights
-                            Designed by Agung TUanany
+                            © 2018 All Rights Designed by Agung TUanany
                         </small>
                     </div>
                 </div>

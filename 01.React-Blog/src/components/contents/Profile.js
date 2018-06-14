@@ -20,7 +20,7 @@ class Profile extends Component {
                             right at the coast of the <a href="#">semantics</a>,
                             a large language ocean. a small river named duden
                             flows by their place and supplies it with the
-                            necessary regelialia.{' '}
+                            necessary regelialia.
                         </p>
                     </div>
                 </div>

@@ -1,0 +1,50 @@
+.feature {
+    text-align: left;
+    width: 100%;
+    float: left;
+}
+
+.feature .icon {
+    float: left;
+    width: 10%;
+    display: block;
+    margin-top: 5px;
+}
+
+.feature .icon i {
+    color: #17e7a4;
+    font-size: 40px;
+}
+
+.feature .text {
+    float: right;
+    width: 82%;
+}
+
+@media screen and (max-width: 768px) {
+    .feature .text {
+        width: 82%;
+    }
+}
+@media screen and (max-width: 480px) {
+    .feature .-text {
+        width: 72%;
+    }
+}
+.feature .text h2,
+feature .text h3 {
+    margin: 0;
+    padding: 0;
+}
+.feature .text h3 {
+    font-weight: 300;
+    margin-bottom: 10px;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 20px;
+}
+.feature .text h2 {
+    font-size: 16px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
