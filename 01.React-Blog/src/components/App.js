@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 
 import './styles/App.css';
+
 // COMPONENT
 import Navbar from './Navbar';
+import Footer from './Footer';
 
 // TYPE OF COMPONENT: Class-Component
 class App extends Component {
@@ -14,8 +16,9 @@ class App extends Component {
 
     render() {
         return (
-            <div className= "app-main">
+            <div className="app-main">
                 <Navbar />
+                <Footer />
             </div>
         );
     }

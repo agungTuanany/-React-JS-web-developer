@@ -1,7 +1,7 @@
-.tab-wrap {
+#tab-wrap {
     position: relative;
 }
-.nav-tabs {
+#tab-wrap .nav-tabs {
     list-style: none;
     text-align: center;
     margin-bottom: 2em;
@@ -13,11 +13,11 @@
 }
 
 @media screen and (max-width: 768px) {
-    .tab-wrap .nav-tabs {
+    #tab-wrap .nav-tabs {
         top: -7px;
     }
 }
-.nav-tabs li {
+#tab-wrap .nav-tabs li {
     float: none;
     display: -moz-inline-stack;
     display: inline-block;
@@ -27,7 +27,7 @@
     margin: 0;
 }
 
-.nav-tabs li a {
+#tab-wrap .nav-tabs li a {
     padding: 2em 1em 1em 1em;
     position: relative;
     color: rgba(255, 255, 255, 0.5);
@@ -42,7 +42,7 @@
     border-radius: 7px;
 }
 
-.nav-tabs li a:after {
+#tab-wrap .nav-tabs li a:after {
     position: absolute;
     content: '';
     height: 0;
@@ -62,20 +62,41 @@
     border-radius: 7px;
 }
 
-.nav-tabs li a:hover {
+#tab-wrap .nav-tabs li a:hover {
     color: #fff;
     text-decoration: none;
 }
 
-.nav-tabs li a:hover:after {
+#tab-wrap .nav-tabs li a:hover:after {
     height: 100%;
 }
 
-.nav-tabs li.active > a {
+#tab-wrap .nav-tabs li.active > a {
     color: #fff;
     text-decoration: none;
 }
 
-.nav-tabs li.active > a:after {
+#tab-wrap .nav-tabs li.active > a:after {
     height: 100%;
+}
+
+#tab-wrap .tab-content {
+    padding: 0 4em;
+}
+
+#tab-wrap .tab-content {
+    padding: 0 4em;
+    position: absolute;
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    #tab-wrap .tab-content {
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+    }
+}
+#tab-wrap .tab-content.active {
+    opacity: 1;
+    visibility: visible;
 }
