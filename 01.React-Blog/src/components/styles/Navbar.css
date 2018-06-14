@@ -1,8 +1,7 @@
 .tab-wrap {
     position: relative;
 }
-.tab-wrap .nav-tabs {
-    border-bottom: 0px;
+.nav-tabs {
     list-style: none;
     text-align: center;
     margin-bottom: 2em;
@@ -10,6 +9,7 @@
     top: -0.5em;
     padding: 0;
     margin: 0;
+    border-bottom: 0px;
 }
 
 @media screen and (max-width: 768px) {
@@ -17,15 +17,65 @@
         top: -7px;
     }
 }
-.tab-wrap .nav-tabs   li {
+.nav-tabs li {
     float: none;
     display: -moz-inline-stack;
     display: inline-block;
     *display: inline; /* ie7 fix */
     zoom: 1; /* hasLayout ie7 trigger */
-    *display:inline;
     padding: 0;
     margin: 0;
 }
 
+.nav-tabs li a {
+    padding: 2em 1em 1em 1em;
+    position: relative;
+    color: rgba(255, 255, 255, 0.5);
+    z-index: 10;
+    display: -moz-inline-stack;
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    border-radius: 7px;
+}
 
+.nav-tabs li a:after {
+    position: absolute;
+    content: '';
+    height: 0;
+    background: #17e7a4;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    -webkit-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -moz-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -ms-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -o-transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    border-radius: 7px;
+}
+
+.nav-tabs li a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-tabs li a:hover:after {
+    height: 100%;
+}
+
+.nav-tabs li.active > a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-tabs li.active > a:after {
+    height: 100%;
+}
