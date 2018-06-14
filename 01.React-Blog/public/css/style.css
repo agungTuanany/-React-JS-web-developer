@@ -1,0 +1,65 @@
+
+body {
+    font-family: 'Source Sans Pro', Arial, sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 1.5;
+    color: #7f7f7f;
+    color: rgba(255, 255, 255, 0.7);
+    background: #fff;
+    height: 100%;
+    position: relative;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+@media screen and (max-width: 768px) {
+    body {
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+}
+
+a {
+    color: #17e7a4;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+a:hover,
+a:active,
+a:focus {
+    color: #17e7a4;
+    outline: none;
+}
+
+p {
+    margin-bottom: 1.5em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #fff;
+    font-family: 'Source Sans Pro', Arial, sans-serif;
+    font-weight: 400;
+    margin: 0 0 30px 0;
+}
+
+::-webkit-selection {
+    color: #fff;
+    background: #17e7a4;
+}
+
+::-moz-selection {
+    color: #fff;
+    background: #17e7a4;
+}
+
+::selection {
+    color: #fff;
+    background: #17e7a4;
+}
