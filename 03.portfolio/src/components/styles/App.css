@@ -1,0 +1,15 @@
+.app-main {
+    max-width: 760px;
+    min-height: 730px;
+    margin: 5em auto 5em auto;
+    position: relative;
+    background: rgba(0, 0, 0, 0.85);
+    overflow: hidden;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    border-radius: 7px;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
